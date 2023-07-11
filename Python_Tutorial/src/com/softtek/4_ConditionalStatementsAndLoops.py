@@ -1,10 +1,13 @@
 print(r'''
-                 ____        _   _                 
-                |  _ \ _   _| |_| |__   ___  _ __  
-                | |_) | | | | __| '_ \ / _ \| '_ \ 
-                |  __/| |_| | |_| | | | (_) | | | |
-                |_|    \__, |\__|_| |_|\___/|_| |_|
-                       |___/ Statements and Loops
+             *****************************************
+             *   ____        _   _                   *
+             *  |  _ \ _   _| |_| |__   ___  _ __    *
+             *  | |_) | | | | __| '_ \ / _ \| '_ \   *
+             *  |  __/| |_| | |_| | | | (_) | | | |  *
+             *  |_|    \__, |\__|_| |_|\___/|_| |_|  *
+             *         |___/  Statements and Loops   * 
+             *                                       *
+             *****************************************
 ''')
 
 '''
@@ -38,9 +41,9 @@ print(r'''
                  *************      If else if Statement      *************
     > Syntax: if ____:
                 <block of code>
-              elif:
+              elif ____:
                 <block of code>
-              esle:
+              else:
                 <block of code>
     
     
@@ -54,10 +57,10 @@ print(r'''
                                                  increment
                   initialization -> condition ->    or
                                                  decrement
-    > Syntax: counter = 0                                                 
+    > Syntax: counter initialization                                                 
               while ____:                                               
                 <block of code>
-                counter += counter
+                counter increment/decrement
     
     > Note: we can have while loop inside a while loop(nested WHILE)
 

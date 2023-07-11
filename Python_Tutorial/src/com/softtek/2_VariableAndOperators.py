@@ -1,10 +1,13 @@
 print(r'''
-                 ____        _   _                 
-                |  _ \ _   _| |_| |__   ___  _ __  
-                | |_) | | | | __| '_ \ / _ \| '_ \ 
-                |  __/| |_| | |_| | | | (_) | | | |
-                |_|    \__, |\__|_| |_|\___/|_| |_|
-                       |___/ Variable And Operators
+             *****************************************
+             *   ____        _   _                   *
+             *  |  _ \ _   _| |_| |__   ___  _ __    *
+             *  | |_) | | | | __| '_ \ / _ \| '_ \   *
+             *  |  __/| |_| | |_| | | | (_) | | | |  *
+             *  |_|    \__, |\__|_| |_|\___/|_| |_|  *
+             *         |___/ Variable And Operators  * 
+             *                                       *
+             *****************************************
 ''')
 
 '''
@@ -68,7 +71,7 @@ Note:
     Relational Operator   ==   <=   >=   !=
     Logical Operator         and   or   not        Ex: a<5 and b<5; not a; etc.
     Bitwise Operator         ~         &     |     ^         <<              >>
-    (More at line 67)  [Complement]  [And]  [Or] [XOR]  [Left Shift]   [Right Shift]
+    (More at line 75)  [Complement]  [And]  [Or] [XOR]  [Left Shift]   [Right Shift]
 '''
 
 # xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -162,8 +165,8 @@ Note:
 '''
                  *************      Special Variable      *************
     > __name__ is a special variable
-    > If a module is run alone, then                  __name__ = "__main__"
-    > If the module is imported in another module the __name__ = "<moduleName>"
+    > If a module is run alone, then                    __name__ = "__main__"
+    > If the module is imported in another module, then __name__ = "<moduleName>"
     
     Ex: 
         Case1 :: When both modules are run individually

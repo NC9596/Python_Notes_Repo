@@ -1,10 +1,13 @@
 print(r'''
-                 ____        _   _                 
-                |  _ \ _   _| |_| |__   ___  _ __  
-                | |_) | | | | __| '_ \ / _ \| '_ \ 
-                |  __/| |_| | |_| | | | (_) | | | |
-                |_|    \__, |\__|_| |_|\___/|_| |_|
-                       |___/      Functions
+             *****************************************
+             *   ____        _   _                   *
+             *  |  _ \ _   _| |_| |__   ___  _ __    *
+             *  | |_) | | | | __| '_ \ / _ \| '_ \   *
+             *  |  __/| |_| | |_| | | | (_) | | | |  *
+             *  |_|    \__, |\__|_| |_|\___/|_| |_|  *
+             *         |___/          Functions      * 
+             *                                       *
+             *****************************************         
 ''')
 
 '''
@@ -19,12 +22,12 @@ print(r'''
         
         -> Function call: <functionName>(<parameters>)
 
-        Ex: def add(x,y):  | def add(x,y):     | def add_sub(x,y):
-                print(x+y) |     return(x+y)   |     c = x+y
-                           |                   |     d = x-y
-            add(5,4) => 9  | add(5,4) => 9     |     return c,d
-                           |                   |
-                           |                   | result1,result2=add_sub(3,2) =>5,1                                    
+       Ex: def add(x,y):  | def add(x,y):     | def add_sub(x,y):
+               print(x+y) |     return(x+y)   |     c = x+y
+                          |                   |     d = x-y
+           add(5,4) => 9  | add(5,4) => 9     |     return c,d
+                          |                   |
+                          |                   | result1,result2=add_sub(3,2) =>5,1                                    
 '''
 
 # xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -139,14 +142,14 @@ print(r'''
         -> To change the Global Variable without affecting the Local Variable
     
     Ex: a = 10               ==> Global Variable
-        def somwFunction():
+        def someFunction():
             a = 15           ==> Local Variable
             print(a) == 15
             
         print(a)     == 10    
             
     Ex: a = 10               ==> Global Variable
-        def somwFunction():
+        def someFunction():
             global a
             a = 15           ==> Global Variable
             print(a) == 15
@@ -154,7 +157,7 @@ print(r'''
         print(a)     == 15
 
     Ex: a = 10                   ==> Global Variable
-        def somwFunction():
+        def someFunction():
             a = 15               ==> Local Variable
             x = globals()['a']   ==> x Will point to the Global Variable
             x = 12               ==> Now it is no longer pointing to that 
@@ -186,9 +189,10 @@ print(r'''
 # xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 '''
         *************      Lambdas OR Anonymous Functions      *************
-    > Functions without name is called as Lamdas
+    > Functions without name is called as Lambdas
     > When the function is to be used ONLY once and has ONLY one expression
-      then Lamdas can be used
+      then Lambdas can be used
+    > Lambda will return a function, so should capture using a functionVariable
       
     > Syntax:
         
@@ -243,8 +247,8 @@ print(r'''
             def inner(a,b):
                 if a<b:
                     a,b=b,a
-            return func(a,b)
-        return inner
+                return func(a,b)
+            return inner
         
         div = smartDiv(div)
         

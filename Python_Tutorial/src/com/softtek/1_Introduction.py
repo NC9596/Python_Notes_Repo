@@ -1,10 +1,13 @@
 print(r'''
-                 ____        _   _                 
-                |  _ \ _   _| |_| |__   ___  _ __  
-                | |_) | | | | __| '_ \ / _ \| '_ \ 
-                |  __/| |_| | |_| | | | (_) | | | |
-                |_|    \__, |\__|_| |_|\___/|_| |_|
-                       |___/    Introduction
+             *****************************************
+             *   ____        _   _                   *
+             *  |  _ \ _   _| |_| |__   ___  _ __    *
+             *  | |_) | | | | __| '_ \ / _ \| '_ \   *
+             *  |  __/| |_| | |_| | | | (_) | | | |  *
+             *  |_|    \__, |\__|_| |_|\___/|_| |_|  *
+             *         |___/      Introduction       * 
+             *                                       *
+             *****************************************
 ''')
 
 '''
@@ -165,4 +168,64 @@ input function (to get input from the user):
     > To convert from octal to decimal: 0o{octal number}
     > To convert from decimal to hexa-decimal(base = 16): hex({decimal number})
     > To convert from hexa-decimal to decimal: 0x{hexa-decimal number}
+'''
+
+# xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+'''
+                 *************      Comments      *************
+    > In Python we ONLY have Single Line Comments
+        --> Use # for Single Line Comment
+    > For MultiLine Comments, should use # in every line    
+    
+    > Triple Quotes(''' ''' OR """ """) ==> is used for documentation 
+                                               NOT for Comments
+            --> Parser will NOT ignore these lines 
+            --> We can export these documentation in text/html format
+            --> Use it ONLY for documentation                                 
+'''
+
+# xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+'''
+  *************      Python Compiled or Interpreted Language?      *************
+    
+    > Python is BOTH Compiled as well as Interpreted language
+    
+    > C and C++ are Compiled languages
+        --> Compiler: Will convert high level language to machine level language
+             [compiler can also convert from one high level language to another]
+    
+    > Python: 
+        --> Python file will first gets compiled to get a Byte code
+        --> Then, the Byte code will be interpreted in a Machine language
+                                                [by a Special Vertual Machine]
+                                                
+       Python 
+       Source  --> [Compiler] --> Byte Code --> [Interpreter] --> Machine Language
+       Code                                (Python Virtual Machine)
+
+        --> Interpreter: It has a set of instructions 
+                         Interpreter will read line by line
+                         
+                         This is done to achieve Platform Independence
+                                             (Write once Run Everywhere)
+                                             
+            PVM: use to run ONLY python codes
+            JVM: use to run Java, Scala, etc
+            
+            NOTE: 
+            1. Run code in JAVA:
+                --> javac Demo.java  //to compile the code
+                --> java Demo        //to run the file
+                
+            2. Run code in Python:
+                --> python Demo.py   //will compile(gives byte code) and runs that
+            
+    > Python Implementations: 
+      [For python language there are different implementations]
+        
+        1. cPython    :: implemented in C language [widely used]
+                         i.e. internal working is happening with C language
+        2. IronPython :: .NET implementation 
+        3. Jython     :: java implementation
+        4. PyPy       
 '''

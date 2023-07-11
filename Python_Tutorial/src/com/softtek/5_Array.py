@@ -1,10 +1,13 @@
 print(r'''
-                 ____        _   _                 
-                |  _ \ _   _| |_| |__   ___  _ __  
-                | |_) | | | | __| '_ \ / _ \| '_ \ 
-                |  __/| |_| | |_| | | | (_) | | | |
-                |_|    \__, |\__|_| |_|\___/|_| |_|
-                       |___/    Array and Numpy
+             *****************************************
+             *   ____        _   _                   *
+             *  |  _ \ _   _| |_| |__   ___  _ __    *
+             *  | |_) | | | | __| '_ \ / _ \| '_ \   *
+             *  |  __/| |_| | |_| | | | (_) | | | |  *
+             *  |_|    \__, |\__|_| |_|\___/|_| |_|  *
+             *         |___/    Array and Numpy      * 
+             *                                       *
+             *****************************************
 ''')
 
 '''
@@ -45,7 +48,7 @@ print(r'''
 '''
     > important functions:
         * buffer-info(): gets a tuple with address and the size
-        * append(): to add values
+        * append(): to add values 
         * remove(): to remove values
         * reverse(): will reverse an existing array
         * index(<value>): will give an index of the value
@@ -87,11 +90,11 @@ print(r'''
         Note: The type of array is dynamic, i.e. if defined arr = array([1,2,'n'])
                 then the type of this array will be changed to string 
                 
-     2. linespace():
+     2. linspace():
             import numpy
             arr = numpy.linspace(0,5,6) [takes 0 1 2 3 4 5 and divides into 6 parts] 
             arr => [0. 1. 2. 3. 4. 5.]
-        Note: linespace(<start>,<stop>,<numberOfParts>)
+        Note: linspace(<start>,<stop>,<numberOfParts>)
               <stop> and <start> is both included
               <numberOfParts> by default is 50
               
